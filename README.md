@@ -34,6 +34,7 @@ class SoftwareDeveloper:
                 'Minecraft (love redstone)',
                 ]},
             'Music',
+            'History, Politics, and Economics',
             'Health and Nutrition', 
         ]
 
