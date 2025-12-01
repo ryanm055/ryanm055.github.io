@@ -1,4 +1,7 @@
-## Hi there 👋
+<h1 align="center">Hi there 👋 I'm Ryan Mehr</h1>
+
+# About Me
+Highly motivated and self driven aspiring IT professional and innovator.
 
 ```python
 class SoftwareDeveloper:
