@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.website-theme {
+    /* background-color: #F9F8F0; */
+    background-color: rgb(25, 50, 60);
+    font-family: 'Open Sans', 'Calibri', 'Optima', 'Arial', 'Helvetica', 'sans-serif';
+    font-weight: 400;
+}
+
+.navbar-theme-color {
+    background-color: rgb(34, 70, 84);
+}
+
+.default-text-color {
+    color: rgb(243, 247, 240);
+}

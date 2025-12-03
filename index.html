@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Mehr Home Page</title>
 
+    <!-- STYLING -->
     <!-- Importing Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Importing Theme Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./static/css/styles.css">
 
     <!-- Google Fonts for Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,49 +20,83 @@
 
     <!-- Importing Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="./static/js/homepage.js" defer></script>
 </head>
-<body class="website-theme flex flex-col">
-    <nav class="navbar-bg-color w-full flex flex-row justify-between p-5 border-b-4 border-gray-400">
+<body class="w-full h-full website-theme flex flex-col default-text-color leading-normal">
+    <!-- Navigation bar. -->
+    <nav class="navbar-theme-color font-bold w-full flex flex-row justify-between p-5 border-b-2 shadow-lg fixed top-0 left-0 right-0 z-100">
         <a href=""><h1>RYAN MEHR</h1></a>
         <ul class="flex flex-row space-x-4 list-none">
-            <a href=""><li>ABOUT ME</li></a>
-            <a href=""><li>TECHNICAL SKILLS</li></a>
-            <a href=""><li>EXPERIENCE</li></a>
-            <a href=""><li>PROJECTS</li></a>
-            <a href=""><li>RESOURCES</li></a>
-            <a href=""><li>OTHER</li></a>
+            <a href="#aboutMe"><li>ABOUT</li></a>
+            <a href="#technicalSkills"><li>SKILLS</li></a>
+            <a href="#experience"><li>EXPERIENCE</li></a>
+            <a href="#projects"><li>PROJECTS</li></a>
+            <a href="#resources"><li>RESOURCES</li></a>
+            <a href="#other"><li>OTHER</li></a>
         </ul>
     </nav>
 
-    <!-- ABOUT ME -->
-    <div>
-        <h1>ABOUT ME</h1>
-    </div>
+    <div id="contentOfPage" class="flex flex-col max-w-5xl h-full mx-auto p-5 mt-20 mb-3">
+        <!-- ABOUT ME -->
+        <div id="aboutMe" class="flex flex-col justify-center text-center items-center md:justify-start md:text-left md:items-start w-full md:flex-row space-x-4 ">
+            <!-- JS loads aboutme.html here. -->
+        </div>
 
-    <!-- TECHNICAL SKILLS -->
-    <div>
-        <h1>TECHNICAL SKILLS</h1>
-    </div>
+        <hr class="my-8 border-t-2 border-gray-400 w-full">
 
-    <!-- EXPERIENCE -->
-    <div>
-        <h1>EXPERIENCE</h1>
-    </div>
+        <!-- EDUCATION -->
+        <div id="education" class="space-y-2 w-full flex flex-col justify-center text-start items-center md:justify-start md:items-start">
+            <!-- JS loads education.html here. -->
+        </div>
 
-    <!-- PROJECTS -->
-    <div>
-        <h1>PROJECTS</h1>
-    </div>
+        <hr class="my-8 border-t-2 border-gray-400 w-full">
 
-    <!-- RESOURCES -->
-    <div>
-        <h1>RESOURCES</h1>
-        <p>Resumes, Contact, etc</p>
-    </div>
+        <!-- TECHNICAL SKILLS -->
+        <div id="technicalSkills" class="space-y-2 w-full flex flex-col justify-center text-start items-center md:justify-start md:items-start">
+            <!-- JS loads technicalskills.html here. -->
+        </div>
+        
+        <hr class="my-8 border-t-2 border-gray-400 w-full">
+        
+        <!-- EXPERIENCE -->
+        <div id="experience" class="space-y-2 w-full flex flex-col justify-center text-start items-center md:justify-start md:items-start">
+            <!-- JS loads experience.html here. -->
+        </div>
+        
+        <hr class="my-8 border-t-2 border-gray-400 w-full">
+        
+        <!-- PROJECTS -->
+        <div id="projects" class="space-y-2 w-full flex flex-col justify-center text-start items-center md:justify-start md:items-start">
+            <!-- JS loads projects.html here. -->
+        </div>
+        
+        <hr class="my-8 border-t-2 border-gray-400 w-full">
+        
+        <!-- RESOURCES -->
+        <div id="resources" class="space-y-2 w-full flex flex-col justify-center text-start items-center md:justify-start md:items-start">
+            <!-- JS loads resources.html here. -->
+            <!-- <h1>RESOURCES</h1>
+            <p>Resumes, Contact, etc</p> -->
+        </div>
+        
+        <hr class="my-8 border-t-2 border-gray-400 w-full">
+        
+        <!-- OTHER -->
+        <div id="other" class="space-y-2 w-full flex flex-col justify-center text-start items-center md:justify-start md:items-start">
+            <!-- JS loads other.html here. -->
+        </div>
 
-    <!-- OTHER -->
-    <div>
-        <h1>OTHER</h1>
+        <hr class="my-8 border-t-2 border-gray-400 w-full">
+    
+        <footer class="space-y-2 w-full flex flex-col justify-center text-start items-center md:justify-start md:items-start">
+            <p>
+                Made by Ryan Mehr, <span id="currentYear"></span>
+            </p>
+        </footer>
     </div>
+    
+
 </body>
 </html>
