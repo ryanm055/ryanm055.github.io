@@ -28,7 +28,9 @@
     <!-- Navigation bar. -->
     <nav class="navbar-theme-color font-bold w-full flex flex-row justify-between p-5 border-b-2 shadow-lg fixed top-0 left-0 right-0 z-100">
         <a href=""><h1>RYAN MEHR</h1></a>
-        <ul class="flex flex-row space-x-4 list-none">
+
+        <!-- Navigation when width is greater than md. -->
+        <ul class="hidden md:flex flex flex-row space-x-4 list-none">
             <a href="#aboutMe"><li>ABOUT</li></a>
             <a href="#technicalSkills"><li>SKILLS</li></a>
             <a href="#experience"><li>EXPERIENCE</li></a>
@@ -36,6 +38,20 @@
             <a href="#resources"><li>RESOURCES</li></a>
             <a href="#other"><li>OTHER</li></a>
         </ul>
+
+        <!-- Navigation when width is less than md. -->
+        <div id="navMenuMobileContainer" class="md:hidden cursor-pointer space-y-1">
+            <i id="navMenuMobileIcon" class="absolute top-8 right-5 fa-solid fa-bars fa-2xl"></i>
+
+            <ul id="navMenuMobileLinks" class="pr-20 hidden flex flex-col justify-center items-center space-y-4 list-none">
+                <a href="#aboutMe"><li>ABOUT</li></a>
+                <a href="#technicalSkills"><li>SKILLS</li></a>
+                <a href="#experience"><li>EXPERIENCE</li></a>
+                <a href="#projects"><li>PROJECTS</li></a>
+                <a href="#resources"><li>RESOURCES</li></a>
+                <a href="#other"><li>OTHER</li></a>
+            </ul>
+        </div>
     </nav>
 
     <div id="contentOfPage" class="flex flex-col max-w-5xl h-full mx-auto p-5 mt-20 mb-3">

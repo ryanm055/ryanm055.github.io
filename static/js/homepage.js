@@ -1,3 +1,14 @@
+// For navigation responsiveness.
+const navMenuMobileContainer = document.getElementById('navMenuMobileContainer');
+const navMenuMobileIcon = document.getElementById('navMenuMobileIcon');
+const navMenuMobileLinks = document.getElementById('navMenuMobileLinks');
+
+navMenuMobileContainer.addEventListener('click', () => {
+    navMenuMobileIcon.classList.toggle('fa-bars');
+    navMenuMobileIcon.classList.toggle('fa-x');
+    navMenuMobileLinks.classList.toggle('hidden');
+});
+
 // Load in aboutMe section.
 fetch('./static/html/aboutme.html')
     .then(response => response.text())

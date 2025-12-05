@@ -1,2 +1,82 @@
-<h1>Error Code 404: You're in the wrong house fool.</h1>
-<a href="./index.html">Go back to home page.</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- STYLING -->
+    <!-- Importing Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Internal CSS -->
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            background-color: #222222;
+            background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+        }
+
+        /* From Uiverse.io by alexroumi */
+        /* https://uiverse.io/alexroumi/shy-sloth-91 */ 
+        a {
+            padding: 15px 25px;
+            border: unset;
+            border-radius: 15px;
+            color: #212121;
+            z-index: 1;
+            background: #e8e8e8;
+            position: relative;
+            font-weight: 400;
+            font-size: 17px;
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+            box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+            transition: all 250ms;
+            overflow: hidden;
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            border-radius: 15px;
+            background-color: #212121;
+            z-index: -1;
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+            box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+            transition: all 250ms
+        }
+
+        a:hover {
+            color: #e8e8e8;
+        }
+
+        a:hover::before {
+            width: 100%;
+        }
+    </style>
+
+     <!-- Google Fonts for Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="flex flex-col justify-center items-center h-screen space-y-5">
+        <h1 class="text-3xl shadow-lg p-2">Error Code 404: Page not Found.</h1>
+        <img class="border shadow-lg" src="https://images.steamusercontent.com/ugc/796514467311572112/3057375CDDA044292EB64801C2CAAAFB499FB233/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" width="250" height="250">
+        <a href="./index.html" class="shadow-lg">Go back to home page.</a>
+    </div>
+</body>
+</html>
