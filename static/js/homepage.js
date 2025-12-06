@@ -10,49 +10,37 @@ navMenuMobileContainer.addEventListener('click', () => {
 });
 
 // Load in aboutMe section.
-fetch('./static/html/aboutme.html')
+fetch('/static/html/aboutme.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('aboutMe').innerHTML = data;
     });
 
 // Load in education.
-fetch('./static/html/education.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('education').innerHTML = data;
-    });
+// Education is added through another JS file.
 
 // Load in technical skills.
-fetch('./static/html/technicalskills.html')
+fetch('/static/html/technicalskills.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('technicalSkills').innerHTML = data;
     });
 
 // Load in experience.
-fetch('./static/html/experience.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('experience').innerHTML = data;
-    });
+// Experience is added through another JS file.
 
 // Load in projects.
-fetch('./static/html/projects.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('projects').innerHTML = data;
-    });
+// Projects is added through another JS file.
 
 // Load in resources.
-fetch('./static/html/resources.html')
+fetch('/static/html/resources.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('resources').innerHTML = data;
     });
 
 // Load in other.
-fetch('./static/html/other.html')
+fetch('/static/html/other.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('other').innerHTML = data;

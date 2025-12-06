@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Importing Theme Stylesheet -->
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
 
     <!-- Google Fonts for Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- JAVASCRIPT -->
-    <script src="./static/js/homepage.js" defer></script>
+    <script src="/static/js/homepage.js" defer></script>
+    <script src="/static/js/educationandexperience.js" defer></script>
+    <script src="/static/js/addingprojects.js" defer></script>
 </head>
 <body class="w-full h-full website-theme flex flex-col default-text-color leading-normal">
     <!-- Navigation bar. -->
-    <nav class="navbar-theme-color font-bold w-full flex flex-row justify-between p-5 border-b-2 shadow-lg fixed top-0 left-0 right-0 z-100">
+    <nav class="navbar-theme-color font-bold w-full flex flex-row justify-between p-5 border-b-2 shadow-2xl fixed top-0 left-0 right-0 z-100">
         <a href=""><h1>RYAN MEHR</h1></a>
 
         <!-- Navigation when width is greater than md. -->
@@ -85,7 +87,17 @@
         
         <!-- PROJECTS -->
         <div id="projects" class="space-y-2 w-full flex flex-col justify-center text-start items-center md:justify-start md:items-start">
-            <!-- JS loads projects.html here. -->
+            <!-- HEADING -->
+            <div>
+                <h1 class="text-2xl font-bold mb-2">
+                    PROJECTS
+                </h1>
+            </div>
+            
+            <!-- Projects Showcase. -->
+            <div id="projectsShowcase" class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <!-- JS loads projects here. -->
+            </div>
         </div>
         
         <hr class="my-8 border-t-2 border-gray-400 w-full">
@@ -108,11 +120,9 @@
     
         <footer class="space-y-2 w-full flex flex-col justify-center text-start items-center md:justify-start md:items-start">
             <p>
-                Made by Ryan Mehr, <span id="currentYear"></span>
+                &copy; Made by Ryan Mehr, <span id="currentYear"></span>
             </p>
         </footer>
     </div>
-    
-
 </body>
 </html>
